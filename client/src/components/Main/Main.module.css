@@ -1,0 +1,103 @@
+.main {
+  padding: 30px 15px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+ font-size: 16px;
+ line-height: 24px;
+ background-color: #333;
+}
+
+.name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentTitle {
+ font-size: 40px;
+ line-height: 1;
+ margin: 0px 0px 50px 0px;
+ color: #fff;
+}
+
+.btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteBtn {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.loadBtn {
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #D2691E;
+}
+
+@media (min-width: 992px) {
+  .main {
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr / 1fr minmax(auto, 300px) minmax(auto, 1100px) 1fr;
+  }
+  .content {
+    grid-column: 2 / 4;
+    padding: 0px 0px 0px 30px;
+  }
+}
+
+
+.films {
+ display: grid;
+ column-gap: 30px;
+ row-gap: 50px;
+ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ /* grid-auto-rows: 1fr; */
+}
+
+.filmItem {
+ display: grid;
+ grid-auto-flow: row;
+ grid-template: auto 1fr minmax(140px, auto) / 1fr;
+}
+.filmImage {
+  overflow: hidden;
+ position: relative;
+ padding: 0px 0px 90% 0px;
+ margin: 0px 0px 20px 0px;
+}
+.filmImage img {
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ top: 0;
+ left: 0;
+ object-fit: cover;
+ border-radius: 20px;
+}
+.filmName {
+ color: #fff;
+ font-size: 20px;
+ line-height: 28px;
+ margin: 0px 0px 30px 0px;
+ text-decoration: none;
+}
+
+.rating {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.ratingWrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}

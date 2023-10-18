@@ -1,0 +1,26 @@
+{
+  "name": "uuvideolibrary_server",
+  "version": "0.0.2",
+  "description": "Unicorn Video Library Server",
+  "main": "app.js",
+  "scripts": {
+    "start": "node -r dotenv/config app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Levitskiy",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.10.0",
+    "axios": "^0.26.1",
+    "bcrypt": "^5.1.0",
+    "busboy": "^1.5.0",
+    "cors": "^2.8.5",
+    "dateformat": "^4.6.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.3",
+    "form-data": "^4.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "multer": "^1.4.5-lts.1",
+    "neat-csv": "^6.0.1"
+  }
+}
